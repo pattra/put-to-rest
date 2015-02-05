@@ -1,0 +1,5 @@
+# Compiled Source #
+###################
+*.pyc
+Player.json
+Floor.json

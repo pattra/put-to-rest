@@ -1,0 +1,22 @@
+{
+	"dungeon" : ["candlestick","slab_candles"],
+	"candlestick" : {
+		"image" : ["assets/objects/Candles1SingleLegs.png"],
+		"width":1,
+		"height":1,
+		"destructable":false,
+		"pathable":false,
+		"x_off": 1,
+		"y_off": -19
+	},
+	"slab_candles" : {
+		"image" : ["assets/objects/Candles3StoneSlabImproved.png",
+		           "assets/objects/Candles3StoneSlab2.png"],
+		"width":2,
+		"height":1,
+		"destructable":false,
+		"pathable":false,
+		"x_off": 0,
+		"y_off": -19
+	}
+}

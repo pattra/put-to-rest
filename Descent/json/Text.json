@@ -1,0 +1,23 @@
+{
+	"main" :
+		{
+			"charselect" : "Select your party of brave adventurers. You may select a maximum of four members.\n \n To add people to your party, click on their class names to the left. Hover to see class descriptions.",
+			"win" : "Your party delves deeper into the darkness. The constant wailing of wraiths and phantoms has subsided into an eerie quiet. \n \n Where is the king? You all wonder, as a cold feeling of darkness washes across your insides...",
+			"lose" : "As the last of your party fights to survive, one final, merciless swing is all that is needed to put an end to the journey. \n \n The room is awash with cold as the fire in your hearts smolders into nothingness...",
+			"intro" : "A long, long time ago, there was a jealous king who ruled the land like a tyrant. Everywhere he went, the shadow cast by his blood-stained blade smothered his people and their ways of life. \n \n He was finally betrayed by his nobles and for a time there was hope in the kingdom. But even in death, this king could not find peace. His jealousy kept his soul hooked into the living world, until his skin wore away into dust and only his bones remained. At the crowning of each new king he would return, and the descendents of the nobles would once again slay him. \n \n A new king is soon to be crowned, but the bloodlines of the kingslaying nobles have thinned. You and your party of brave townspeople-turned-soldiers make up the bastard children and forgotten descendants of the nobles. Descend the king's crypt to ensure sovereignty and peace, at least for a little while longer...  "
+		},
+	"events" :
+		{
+			"espurr" : {
+				"intro": "A pair of bright pink eyes peeks out at you from the darkness.",
+				"options": ["Charge at 'em!", "Politely greet the presence.", "Mew gently.", "Ew, creepy. Leave it alone."],
+				"outcomes": ["One of your party members charges at the presence recklessly. The eyes vanish from sight, and with a yelp, your former friend is swallowed into the darkness.", "The eyes disappear and you hear the quick padding of tiny footsteps running away.", "A small catlike creature emerges cautiously from the darkness. \n \n It takes a liking to you and joins your party."]
+			},
+			"relic" : {
+				"intro": "You enter a room with a suspicious-looking, spherical relic laid on a pedestal in the center. The ceilings are high and faint, blue light flickers from nearby candles. \n \n As your party approaches the relic, you hear it emit a faint hum. It appears to be made of solid gold.",
+				"options": ["Take the relic.", "Get a closer look at the relic.", "Leave it alone."],
+				"outcomes": ["You reach out to the relic. Before contact is made, a light bursts out of the sphere and fills the room with warmth. \n \n Your party members have healed.", "As your fingers make contact with the relic, an ear-piercing shout emanates throughout the room, deafening your party and filling you with fear. \n \n Once you've all regained your bearings, you notice that the relic is gone. \n \n", "As a party member reaches out to the relic, you all hear a slight giggle behind you. \n \n Upon turning around, you hear a shout and a loud tumble. Looking back, you see a witch crouched over your fallen friend, palming an all-too-familiar eyeball in her wrinkled hands. \n \n As she makes eye contact with you, she smiles wretchedly and disappears into the darkness before you can act."],
+				"prob": [50,15]
+			}
+		}
+}

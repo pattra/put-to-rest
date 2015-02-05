@@ -1,0 +1,329 @@
+{
+
+	"condensed" : {
+		"summary" : ["Maxmimum Health (take more hits)","Damage (pummel baddies harder)","Healing (restorative juice)","Attack Range (how far you can reach)","Speed (how far you can move in a turn)","Vision (how far you can see)","Initiative (how quick you are to react)"],
+		"miner" : [7,2,0,1,7,9,7],
+		"blacksmith" : [9,1.5,0,1,7,7,6],
+		"magician" : [5,1.5,0,"2-4",6,8,7],
+		"conjurer" : [6,1,0,"2-4",6,8,6],
+		"blood_priestess" : [5,0.5,0.5,"2-4",6,9,7],
+		"priest" : [5,0,1,"2-4",6,8,7],
+		"trapper" : [5,1.5,0,"2-4",5,9,9],
+		"thief" : [5,2,0,1,8,9,9]
+	},
+	"miner" : {
+		"names" : ["Brock", "Tristan", "Trent", "Rex"],
+		"image" : "assets/chars/miner.png",
+		"projectile_image" : "assets/projectiles/Pickaxe1.png",
+		"health" : 7,
+		"max_health" : 7,
+		"speed" : 7,
+		"vision" : 9,
+		"initiative" : 7,
+		"min_range" : 0,
+		"max_range" : 1,
+		"damage" : 2,
+		"alive" : 1,
+		"level_gain" :{"max_health":1,"damage":0.5,"initiative":0.5},
+		"desc" : "A feet-wet and hands-dirty type of guy, the miner's explosive attitude is sure to impress at parties.\n \n He has a somewhat tanky stature and deals pretty good damage in melee range."
+	},
+	"blacksmith" : {
+		"names" : ["Damien", "Horace", "Frederick", "Seth"],
+		"image" : "assets/chars/blacksmith.png",
+		"projectile_image" : "assets/projectiles/Hammer1.png",
+		"health" : 9,
+		"max_health" : 9,
+		"speed" : 7,
+		"vision" : 7,
+		"initiative" : 6,
+		"min_range" : 0,
+		"max_range" : 1,
+		"damage" : 1.5,
+		"alive" : 1, 
+		"level_gain" :{"max_health":1,"damage":0.5,"initiative":0.5},
+		"desc" : "Hardy, tough, and callous-handed, trust the blacksmith to carry the team on his broad, oiled shoulders. \n \n The blacksmith has a tanky stature and deals average melee damage."
+	},
+	"magician" : {
+		"names" : ["Ebenezer", "Ezere", "Oren", "Oscar", "Abelard"],
+		"image" : "assets/chars/magician.png",
+		"projectile_image" : "assets/projectiles/Magic1.png",
+		"health" : 5,
+		"max_health" : 5,
+		"speed" : 6,
+		"vision" : 8,
+		"initiative" : 7,
+		"min_range" : 2,
+		"max_range" : 4,
+		"damage" : 1.5,
+		"alive" : 1, 
+		"level_gain" :{"max_health":0.5,"damage":1,"initiative":0.5},
+		"desc" : "The traveling magician is a mysterious figure (for one, is s/he a boy or a girl?). But whatever the magician's story may be, the power of magic is deadly in any arsenal. \n \n The magician has a weaker stature and deals good ranged damage."
+	},
+	"conjurer" : {
+		"names" : ["Baulder", "Egen", "Decard", "Itherimus", "Galnis"],
+		"image" : "assets/chars/conjurer.png",
+		"projectile_image" : "assets/projectiles/Conjure1.png",
+		"health" : 6,
+		"max_health" : 6,
+		"speed" : 6,
+		"vision" : 8,
+		"initiative" : 6,
+		"min_range" : 2,
+		"max_range" : 4,
+		"damage" : 1,
+		"alive" : 1, 
+		"level_gain" :{"max_health":0.5,"damage":1,"initiative":0.5},
+		"desc" : "Speak softly and carry a big stick. \n \n Take the conjurer for the low cost of an average stature for average ranged damage."
+	},
+	"blood_priestess" : {
+		"names" : ["Jessica", "Sarah", "Lauren", "Alice"],
+		"image" : "assets/chars/bpriest.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"health" : 5.0,
+		"max_health" : 5.0,
+		"speed" : 6,
+		"vision" : 9,
+		"initiative" : 7,
+		"min_range" : 2,
+		"max_range" : 4,
+		"damage" : 0.5,
+		"heal":0.5,
+		"alive" : 1, 
+		"level_gain" :{"max_health":0.5,"damage":0.5,"heal":0.5,"initiative":0.5},
+		"desc" : "In Max's opinion, every game should have at least one blood priest or priestess. Are you one to disagree? \n \n The blood priest has a weaker stature and deals minor ranged damage in exchange for also providing minor heals."
+	},
+	"priest" : {
+		"names" : ["Owain", "Luther", "Luke", "Benjamin", "Patrick"],
+		"image" : "assets/chars/priest.png",
+		"projectile_image" : "assets/projectiles/Heal1.png",
+		"health" : 5,
+		"max_health" : 5,
+		"speed" : 6,
+		"vision" : 8,
+		"initiative" : 7,
+		"min_range" : 2,
+		"max_range" : 4,
+		"damage": 0,
+		"heal" :1,
+		"alive" : 1, 
+		"level_gain" :{"max_health":0.5,"heal":1,"initiative":0.5},
+		"desc" : "No one likes waiting in queue in front of the dungeon. Why not nip that one in the bud? \n \n Our pinnacle of all that is good and pure will give you and your party major heals, though he deals no damage."
+	},
+	"trapper" : {
+		"names" : ["Gregory", "Rickard", "Deter", "George"],
+		"image" : "assets/chars/trapper.png",
+		"projectile_image" : "assets/projectiles/Arrow1.png",
+		"health" : 5,
+		"max_health" : 5,
+		"speed" : 5,
+		"vision" : 9,
+		"initiative" : 9,
+		"min_range" : 2,
+		"max_range" : 4,
+		"damage" : 1.5,
+		"alive" : 1, 
+		"level_gain" :{"max_health":0.5,"damage":1,"initiative":0.5},
+		"desc" : "Be one with your facial hair, even if it takes up 4 pixels on a screen. \n \n Take the trapper along if you want a man with a weaker stature but good ranged damage."
+	},
+	"thief" : {
+		"names" : ["Ilica", "Mira", "Innes", "Lissa"],
+		"image" : "assets/chars/thief.png",
+		"projectile_image" : "assets/projectiles/Knife1.png",
+		"health" : 5,
+		"max_health" : 5,
+		"speed" : 8,
+		"vision" : 9,
+		"initiative" : 9,
+		"min_range" : 0,
+		"max_range" : 1,
+		"damage" : 2,
+		"alive" : 1, 
+		"level_gain" :{"max_health":0.5,"damage":0.5,"initiative":1,"speed":1},
+		"desc" : "She prefers 'opportunistic night owl' over 'street rat.' \n \n With high speed and good melee damage, the thief is a great asset to any aggro arsenal. Take note of her weaker stature, however."
+	},
+	"skeleton_king" : {
+		"names" : ["Skeleton King"],
+		"image" : "assets/chars/SkeletonKing1.png",
+		"projectile_image" : "assets/projectiles/Knife1.png",
+		"health" : 50,
+		"max_health" : 50,
+		"speed" : 9,
+		"vision" : 10,
+		"initiative" : 25,
+		"min_range" : 0,
+		"max_range" : 5,
+		"damage" : 4,
+		"level_gain" :{"health":5,"damage":1,"speed":1}
+	},
+	"ghost_melee_1" : {
+		"image" : "assets/chars/Ghost2Base.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Wraith"],
+		"health" : 1.5,
+		"max_health" : 1.5,
+		"speed" : 5,
+		"vision" : 8,
+		"initiative" : 4,
+		"min_range" : 0,
+		"max_range" : 1,
+		"damage" : 1,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	},
+	"ghost_ranged_1" : {
+		"image" : "assets/chars/Ghost1Base.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Phantom"],
+		"health" : 1.0,
+		"max_health" : 1.0,
+		"speed" : 4,
+		"vision" : 8,
+		"initiative" : 6,
+		"min_range" : 3,
+		"max_range" : 4,
+		"damage" : 1,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	},
+	"ghost_melee_2" : {
+		"image" : "assets/chars/Ghost2Blue.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Frigid Wraith"],
+		"health" : 2.0,
+		"max_health" : 2.0,
+		"speed" : 6,
+		"vision" : 8,
+		"initiative" : 5,
+		"min_range" : 0,
+		"max_range" : 1,
+		"damage" : 1,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	},
+	"ghost_ranged_2" : {
+		"image" : "assets/chars/Ghost1Blue.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Chilling Phantom"],
+		"health" : 1.5,
+		"max_health" : 1.5,
+		"speed" : 5,
+		"vision" : 8,
+		"initiative" : 7,
+		"min_range" : 2,
+		"max_range" : 4,
+		"damage" : 1.5,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	},
+	"ghost_melee_3" : {
+		"image" : "assets/chars/Ghost2Green.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Mire Wraith"],
+		"health" : 2.5,
+		"max_health" : 2.5,
+		"speed" : 6.0,
+		"vision" : 8,
+		"initiative" : 6.0,
+		"min_range" : 0,
+		"max_range" : 2,
+		"damage" : 1.5,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	},
+	"ghost_ranged_3" : {
+		"image" : "assets/chars/Ghost1Green.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Loam Phantom"],
+		"health" : 2.0,
+		"max_health" : 2.0,
+		"speed" : 5,
+		"vision" : 8,
+		"initiative" : 8,
+		"min_range" : 3,
+		"max_range" : 5,
+		"damage" : 1.5,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	},
+	"ghost_melee_4" : {
+		"image" : "assets/chars/Ghost2Purple.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Archwraith"],
+		"health" : 3.5,
+		"max_health" : 3.5,
+		"speed" : 7,
+		"vision" : 8,
+		"initiative" : 7,
+		"min_range" : 0,
+		"max_range" : 2,
+		"damage" : 2,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	},
+	"ghost_ranged_4" : {
+		"image" : "assets/chars/Ghost1Purple.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Dread Phantom"],
+		"health" : 2.5,
+		"max_health" : 2.5,
+		"speed" : 5,
+		"vision" : 8,
+		"initiative" : 9,
+		"min_range" : 3,
+		"max_range" : 6,
+		"damage" : 2.5,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	},
+	"ghost_melee_5" : {
+		"image" : "assets/chars/Ghost2Red.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Hell Wraith"],
+		"health" : 4.5,
+		"max_health" : 4.5,
+		"speed" : 7,
+		"vision" : 9,
+		"initiative" : 8,
+		"min_range" : 0,
+		"max_range" : 2,
+		"damage" : 3,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	},
+	"ghost_ranged_5" : {
+		"image" : "assets/chars/Ghost1Red.png",
+		"projectile_image" : "assets/projectiles/Blood1.png",
+		"names" : ["Pyregeist"],
+		"health" : 3.0,
+		"max_health" : 3.0,
+		"speed" : 5,
+		"vision" : 9,
+		"initiative" : 10,
+		"min_range" : 2,
+		"max_range" : 6,
+		"damage" : 3,
+		"actions" : [
+				{"name":"stab", "range": 1, "targets":["unit","objects"], 
+				"effect":[["damage", "target", 1]]}
+		]
+	}
+
+}
